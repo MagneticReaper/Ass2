@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zbofkmVjIsWN33uJhxt+BbHy7+5zqB/onYJWpsTqvDZ7DYvFj8TWNbn2OK8XxcZcNz+a5Gcg5zHnZroxgkw++Q==",
+  "dgSpecHash": "3qlZiwciIxz6bkH5aLINP0riOf71Eth8sNDooTg3JnY1dQbAehPKw28L5JpNhaojClxRCGUsMVni4G6CmV4WgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\remyb\\source\\repos\\ass2\\ass2\\ass2.csproj",
+  "projectFilePath": "C:\\Users\\remyb\\source\\repos\\Ass2\\ass2\\lab5-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\remyb\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\remyb\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

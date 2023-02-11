@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\remyb\\source\\repos\\ass2\\ass2\\ass2.csproj": {}
+    "C:\\Users\\remyb\\source\\repos\\Ass2\\ass2\\ass2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\remyb\\source\\repos\\ass2\\ass2\\ass2.csproj": {
+    "C:\\Users\\remyb\\source\\repos\\Ass2\\ass2\\ass2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\remyb\\source\\repos\\ass2\\ass2\\ass2.csproj",
+        "projectUniqueName": "C:\\Users\\remyb\\source\\repos\\Ass2\\ass2\\ass2.csproj",
         "projectName": "ass2",
-        "projectPath": "C:\\Users\\remyb\\source\\repos\\ass2\\ass2\\ass2.csproj",
+        "projectPath": "C:\\Users\\remyb\\source\\repos\\Ass2\\ass2\\ass2.csproj",
         "packagesPath": "C:\\Users\\remyb\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\remyb\\source\\repos\\ass2\\ass2\\obj\\",
         "projectStyle": "PackageReference",
