@@ -1,4 +1,4 @@
-using ass2.Models;
+using Models;
 
 var builder = WebApplication.CreateBuilder(args);
 //create db if it doesn't exist

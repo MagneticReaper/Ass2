@@ -1,4 +1,4 @@
-﻿namespace ass2.Models
+﻿namespace Models
 {
     public class Response
     {

@@ -1,12 +1,21 @@
-﻿<Window x:Class="ass2_client.MainWindow"
+﻿<Window x:Name="salesWindow" x:Class="ass2_client.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ass2_client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Sales" Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" MinHeight="100" MinWidth="100" WindowStartupLocation="CenterScreen" Background="#FF254F68">
+    <StackPanel>
+        <DataGrid x:Name="saleGrid" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" Background="{x:Null}" RowHeaderWidth="0" GridLinesVisibility="None" BorderThickness="0,0,0,0" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Margin="10,10,10,0"/>
+        <DockPanel LastChildFill="True">
+            <Button Content="Complete Transaction" Width="NaN" Margin="0,10,10,10" Background="#1FFFFFFF" BorderThickness="0,0,0,0" Foreground="White" Padding="10,10,10,10" DockPanel.Dock="Right" Click="Button_Click"/>
+            <DockPanel Background="#1F000000" Margin="10,10,10,10">
+                <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center"  >
+                    <Label Content="Total:" Padding="10,10,2,10"/>
+                    <Label x:Name="labelTot" Content="0" Padding="2,10,10,10"/>
+                </DockPanel>
+            </DockPanel>
+        </DockPanel>
+    </StackPanel>
 </Window>

@@ -1,6 +1,6 @@
 ﻿using System.Data.SQLite;
 
-namespace ass2.Models
+namespace Models
 {
     public class Database
     {
@@ -8,7 +8,7 @@ namespace ass2.Models
         { // Create Table
             try
             {// get connection
-                SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=database.db; Version = 3; New = True; Compress = True; ");
+                SQLiteConnection sqlite_conn = new("Data Source=database.db; Version = 3; New = True; Compress = True; ");
                 sqlite_conn.Open();
                 SQLiteCommand sqlite_cmd;
                 // create command

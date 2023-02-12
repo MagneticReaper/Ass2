@@ -1,12 +1,10 @@
-﻿<Window x:Class="ass2_admin.MainWindow"
+﻿<Window x:Name="adminWindow" x:Class="ass2_admin.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ass2_admin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Admin" Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" MinHeight="50" MinWidth="100" WindowStartupLocation="CenterScreen">
+    <DataGrid x:Name="productGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Background="{x:Null}" GridLinesVisibility="None" RowHeaderWidth="0" BorderThickness="0,0,0,0"/>
 </Window>
