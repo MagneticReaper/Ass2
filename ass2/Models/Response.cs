@@ -1,6 +1,6 @@
 ﻿namespace Models
 {
-    public class Response
+    public class Response // response entity
     {
         public int StatusCode { get; set; }
         public string? StatusMessage { get; set; }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ass2_client"
         mc:Ignorable="d"
-        Title="Sales" Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" MinHeight="100" MinWidth="100" WindowStartupLocation="CenterScreen" Background="#FF254F68">
+        Title="Sales" Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" MinHeight="100" MinWidth="100" WindowStartupLocation="CenterScreen" Background="#FF39424F">
     <StackPanel>
         <DataGrid x:Name="saleGrid" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" Background="{x:Null}" RowHeaderWidth="0" GridLinesVisibility="None" BorderThickness="0,0,0,0" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Margin="10,10,10,0"/>
         <DockPanel LastChildFill="True">

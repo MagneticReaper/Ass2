@@ -38,7 +38,6 @@ namespace ass2_admin
             productGrid.RowStyle = gridStyles?[0];
             productGrid.CellStyle = gridStyles?[1];
             productGrid.ColumnHeaderStyle = gridStyles?[2];
-            UpdateGrid();
         }
 
         public void UpdateGrid()
@@ -87,6 +86,11 @@ namespace ass2_admin
             gridStyles.Add(st2);
             gridStyles.Add(st4);
             gridStyles.Add(st5);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AdminAPP.GetProducts();
         }
     }
 }

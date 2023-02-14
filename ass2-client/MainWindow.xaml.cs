@@ -102,7 +102,7 @@ namespace ass2_client
             gridStyles.Add(st4);
             gridStyles.Add(st5);
         }
-
+        
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             if (ClientAPP.saleProducts != null)
@@ -112,6 +112,7 @@ namespace ass2_client
                     sp.SaleQTY = 0;
                 }
             await Task.Run(ClientAPP.ReplaceAsync);
+            ClientAPP.GetProducts();
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace Models
 {
-    public class Product : INotifyPropertyChanged
+    public class Product : INotifyPropertyChanged //product entity
     {
         private int _id;
         private string? _name;

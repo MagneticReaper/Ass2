@@ -13,6 +13,7 @@ namespace Models
             sqlite_cmd.CommandText = "SELECT * FROM Product";
             SQLiteDataReader dataReader = sqlite_cmd.ExecuteReader();
             List<Product> list = new();
+            //use reader to read every row and add it to the product list
             while (dataReader.Read())
 
             {
@@ -120,7 +121,7 @@ namespace Models
                 response.StatusMessage = "Products not deleted";
             }
             SQLiteCommand cmd2 = con.CreateCommand();
-            string command = "insert into Product(id, name, amount, price) values";
+            string command = "insert into Product(id, name, amount, price) values"; // populate table
             foreach (Product product in products)
             {
                 command += "(" + product.Id + ", '" + product.Name + "', '" + product.Amount + "', " + product.Price + ") ,";

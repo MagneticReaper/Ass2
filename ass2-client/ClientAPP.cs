@@ -1,5 +1,4 @@
 ﻿using Models;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +6,6 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Net.Http;
 using System.Net.Http.Json;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -38,7 +36,6 @@ namespace ass2_client
                     p.PropertyChanged += SaleP_PropertyChanged;
                 }
                 saleProducts.CollectionChanged += SaleProducts_CollectionChanged;
-                MessageBox.Show("Item count = " + saleProducts.Count);
                 MainWindow.SaleInstance?.UpdateGrid();
             }
             catch (Exception) { MessageBox.Show("Failed to connect to API"); GetProducts(); }
@@ -46,13 +43,13 @@ namespace ass2_client
         }
         public static async Task ReplaceAsync()
         {
-            List<Product> products = new List<Product>();
+            List<Product> products = new();
             if (saleProducts != null)
                 foreach (Product p in saleProducts)
                 {
                     products.Add(p);
                 }
-            _ = await client.PostAsync("https://localhost:7022/Product/ReplaceProducts", new StringContent(JsonConvert.SerializeObject(products), Encoding.UTF8, "application/json"));
+            _ = await client.PostAsJsonAsync("https://localhost:7022/Product/ReplaceProducts", products);
         }
         // --------------------------------------------------------------------------------
 

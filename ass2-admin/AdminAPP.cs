@@ -10,7 +10,7 @@ using System;
 
 namespace ass2_admin
 {
-    internal class AdminAPP
+    public class AdminAPP
     {
         // variables
         public static ObservableCollection<Product>? products;
@@ -36,13 +36,14 @@ namespace ass2_admin
                     p.PropertyChanged += P_PropertyChanged;
                 }
                 products.CollectionChanged += Products_CollectionChanged;
+                MainWindow.Instance?.UpdateGrid();
             }
             catch (Exception) { MessageBox.Show("Failed to connect to API"); GetProducts(); }
 
         }
         private static async Task ReplaceAsync()
         {
-            _ = await client.PostAsync("https://localhost:7022/Product/ReplaceProducts", new StringContent(JsonConvert.SerializeObject(products), Encoding.UTF8, "application/json"));
+            _ = await client.PostAsJsonAsync("https://localhost:7022/Product/ReplaceProducts", products);
         }
         // --------------------------------------------------------------------------------
 

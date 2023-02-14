@@ -5,6 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ass2_admin"
         mc:Ignorable="d"
-        Title="Admin" Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" MinHeight="50" MinWidth="100" WindowStartupLocation="CenterScreen">
-    <DataGrid x:Name="productGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Background="{x:Null}" GridLinesVisibility="None" RowHeaderWidth="0" BorderThickness="0,0,0,0"/>
+        Title="Admin" Height="450" Width="800" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" MinHeight="50" MinWidth="100" WindowStartupLocation="CenterScreen" Background="#FF3B6294">
+    <StackPanel>
+        <DataGrid x:Name="productGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Background="{x:Null}" GridLinesVisibility="None" RowHeaderWidth="0" BorderThickness="0,0,0,0" Margin="10,10,10,0"/>
+        <Button Content="Refresh" Width="NaN" Margin="10,10,10,10" Background="#1FFFFFFF" BorderThickness="0,0,0,0" Foreground="White" Padding="10,10,10,10" DockPanel.Dock="Right" Click="Button_Click"/>
+    </StackPanel>
+    
 </Window>
